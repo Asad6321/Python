@@ -1,0 +1,78 @@
+x = "hello"
+print (x)
+
+#sring method in python
+
+#for lower case
+msg="ASAD"
+a= msg.lower()
+print(a)
+
+
+#for title
+msg="ASAD"
+a= msg.title()
+print(a)
+
+
+#no of letters count
+car="i like fortuner.i like black fortuner . comes with 4x4."
+a=car.count("")
+print(a)
+
+#swapping of values without any temporary variable
+a="20"
+b="12"
+a,b=b,a
+print(a,b)
+
+
+#
+my_list="my name is mohammad asad"
+length=len(my_list)
+print(length)
+
+
+#slicing
+my_list=[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16]
+length=len(my_list)
+print(length)
+
+my=[1,2,3,4,5,6,7,8]
+print (my[::-1])#reverse indexing print (my[::-1]),print (my[:])
+
+
+
+#ns=[1,2,6,7,9,0,4]     #asending sort
+#ns.sort()
+#print(ns)
+
+ns=[1,2,6,7,9,0,4]     
+ns.sort(reverse = True)       #decending sorting (reverse = True)
+print(ns)
+
+
+
+
+#ceating own functions
+def max(Lst):
+    if not Lst:
+        return None
+    max_element =Lst[0]
+    for num in Lst:
+        if num > max_element:
+            max_element = num
+    return max_element
+
+ns=[1,2,3,4,5,6,7,8,9,10,11,12]
+maximum = max(ns) #maximum element
+print(f"max no is {maximum}")
+
+
+
+
+def cal_sum(numbers):
+    return sum(numbers)
+numbers=[2,4,6,8,10,12,14,16,18,20]
+total=cal_sum(numbers)
+print(f"the sum is {total}")                    
