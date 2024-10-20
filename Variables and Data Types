@@ -1,0 +1,9 @@
+Data types: int, float, str, bool
+python
+
+age = 25           # int
+height = 5.9        # float
+name = "Alice"      # string
+is_student = True   # boolean
+
+print(f"My name is {name}, I am {age} years old.")
